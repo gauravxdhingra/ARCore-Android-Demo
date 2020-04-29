@@ -246,16 +246,27 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\SD_Character\Scripts\SampleAnimation.cs" />
+    <Compile Include="Assets\SD_Character\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\SD_Character\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\SD_Character\Scripts\SpringManager.cs" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
+    <None Include="Assets\SD_Character\ReadMe.files\filelist.xml" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
+    <None Include="Assets\SD_Character\ReadMe.files\props007.xml" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
+    <None Include="Assets\SD_Character\ReadMe.files\colorschememapping.xml" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
+    <None Include="Assets\SD_Character\ReadMe.files\item0006.xml" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\TransparentShadow.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -272,32 +283,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="VuforiaScripts">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
-    </Reference>
-    <Reference Include="VuforiaEditorScripts">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -305,8 +298,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -478,9 +480,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>C:/Users/GauravXd/Documents/UnityProjects/ARCoreDemo/New Unity Project/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
